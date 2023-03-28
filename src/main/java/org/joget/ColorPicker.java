@@ -9,14 +9,19 @@ import org.joget.apps.form.model.FormData;
 import org.joget.apps.form.service.FormUtil;
 
 import java.util.Map;
+import java.util.logging.Logger;
 
 public class ColorPicker extends Element implements FormBuilderPaletteElement {
     private final static String PROPERTIES_PATH = "/properties/ColorPicker";
     private final static String JSON_PATH = "/properties/ColorPicker.json";
 
+    Logger logger = Logger.getLogger(ColorPicker.class.getName());
+
     @Override
     public String renderTemplate(FormData formData, Map map) {
         String template = "colorPicker.ftl";
+        String defaultValue = FormUtil.getElementPropertyValue(this, formData);
+        map.put("defaultValue", "".equals(defaultValue) ? "#000" : defaultValue);
         String html = FormUtil.generateElementHtml(this, formData, template, map);
         return html;
     }
