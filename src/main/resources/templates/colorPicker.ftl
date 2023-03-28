@@ -22,7 +22,7 @@
     </style>
     <label class="label">${element.properties.label}</label>
     <input id="${elementParamName!}" name="${elementParamName!}" type="hidden" value="${value!?html}"/>
-    <div class="custom-picker form-cell-value" style="width: 100%; height: 50px"></div>
+    <div class="custom-picker form-cell-value" style="width: 200px; height: 50px"></div>
     <script>
         $(".custom-picker").colorPick({
             'initialColor': '#8e44ad',
