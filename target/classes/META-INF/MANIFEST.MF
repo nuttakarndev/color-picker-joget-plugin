@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1679983204810
+Bnd-LastModified: 1679983733171
 Build-Jdk-Spec: 19
 Bundle-Activator: org.joget.Activator
 Bundle-ManifestVersion: 2

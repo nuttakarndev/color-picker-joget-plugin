@@ -79,7 +79,7 @@
             <scope>provided</scope>
         </dependency>
         <!-- Change plugin specific dependencies here -->
-        
+
         <!-- End change plugin specific dependencies here -->
     </dependencies>
     <distributionManagement>
