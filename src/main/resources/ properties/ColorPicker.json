@@ -1,0 +1,22 @@
+[
+  {
+    "title": "@@form.ColorPicker.config@@",
+    "properties": [
+      {
+        "name": "id",
+        "label": "@@form.textfield.id@@",
+        "type": "textfield",
+        "required": "True",
+        "regex_validation": "^[a-zA-Z0-9_]+$",
+        "validation_message": "@@form.textfield.invalidId@@"
+      },
+      {
+        "name": "label",
+        "label": "@@form.textfield.label@@",
+        "type": "textfield",
+        "value": "@@org.joget.ColorPicker.pluginName@@",
+        "required": "True"
+      }
+    ]
+  }
+]
